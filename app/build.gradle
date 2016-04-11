@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "co.platto.note"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:cardview-v7:23.+'
+    dependencies {
+
+        // add the following line, and replace "0.9.4" with the latest version
+    // of Estimote Android SDK; you'll find the latest version number on:
+    //   https://github.com/Estimote/Android-SDK/releases
+    compile 'com.estimote:sdk:0.10.0@aar'
+
+    compile 'com.backendless:backendless:3.0.8.1'
+    compile 'com.parse:parse-android:1.13.0'
+    compile 'com.parse:parseinterceptors:0.0.2' // for logging API calls to LogCat
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.paolorotolo:appintro:3.4.0'
+    compile 'com.google.code.gson:gson:2.5'
+
+    compile 'com.github.paolorotolo:appintro:3.4.0'
+
+    compile 'org.ocpsoft.prettytime:prettytime:3.2.0.Final'
+
+    }
+}

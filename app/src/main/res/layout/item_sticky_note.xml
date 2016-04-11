@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:elevation="4dp"
+    android:background="@color/cardview_light_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="16sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="From: "
+            android:id="@+id/item_card_from_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Content "
+            android:id="@+id/item_card_content"
+            android:layout_below="@+id/item_card_from_name"
+            android:layout_alignStart="@+id/item_card_from_name"
+            android:layout_marginBottom="8sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="• via Slack"
+            android:layout_marginBottom="12sp"
+            android:id="@+id/item_card_via_slack"
+            android:layout_below="@+id/item_card_content"
+            android:layout_alignStart="@+id/item_card_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Time Here"
+            android:layout_marginRight="16sp"
+            android:id="@+id/item_card_timestamp"
+            android:layout_alignTop="@+id/item_card_from_name"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
