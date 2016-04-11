@@ -35,7 +35,7 @@ public class IntroActivity extends AppIntro {
         // Just set a title, description, background and image. AppIntro will do the rest.
         addSlide(AppIntroFragment.newInstance("The Modern Note", "Let's face it. The sticky notes that we know today need a make over. With note.cntxt, ditch the pens and paper and use the modern medium.", R.drawable.stickynote, Color.parseColor("#A9D9E7")));
         addSlide(AppIntroFragment.newInstance("Location, Location", "Using Estimote's beacons and the Estimote SDK, note.cntxt allows you to send notes to co-workers based on their location.  They won't get your notes until they get to the office!", R.drawable.beacon, Color.parseColor("#E4D7EA")));
-        addSlide(AppIntroFragment.newInstance("Vestibulum dapibus", "Fusce neque. Nulla consequat massa quis enim. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.", R.drawable.office, Color.parseColor("#7EB098")));
+        addSlide(AppIntroFragment.newInstance("The Modern Office", "Adding context to the work messages that we see can increase productivity in the workplace and decrease the amount of tasks that are forgotten.", R.drawable.office, Color.parseColor("#7EB098")));
         setSeparatorColor(getResources().getColor(R.color.divider_color));
 
     }
